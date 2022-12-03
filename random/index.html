@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+	<title>Random Generator</title>
+
+	<!-- 
+		Це змінний стиль. Після кнопки
+		натискання кнопки "Згенерувати"
+		вміст цього тегу змінюється
+		(script.js: 75)
+	-->
+	<style type="text/css">
+		.bottom {
+			display: grid;
+			place-items: center;
+			height: 100vh; 
+			position: relative;
+		}
+
+		.params { gap: 30px; }
+		.gap { width: 50px; height: 6px; }
+		input { font-size: 100px; width: 200px; }
+		.start { bottom: 130px; position: absolute; }
+	</style>
+
+</head>
+<body>
+
+	<!-- Коробка з номером -->
+	<div class="number" style="display: none;"><div class="square"></div></div>
+
+	<!-- Менюшка -->
+	<!--
+		До натиснення кнопки "Згенерувати"
+		вона розгорнута на всю сторіку, після
+		концентрується знизу по центру екрана
+	-->
+	<div class="bottom">
+		<!-- Кнопка для генераціх -->
+		<div class="start" onclick="generate(1)">Згенерувати</div>
+
+		<!-- Параметри -->
+		<div class="params">
+			<input class="from" type="number" placeholder="?" value=01>
+			<div class="gap"></div> <!-- Риска по центру -->
+			<input class="to" type="number" placeholder="?" value=10>
+		</div>
+	</div>
+
+	<script src="script.js"></script>
+
+</body>
+</html>

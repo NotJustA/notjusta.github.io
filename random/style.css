@@ -1,0 +1,92 @@
+/* == Інсталювання шрифту == */
+@font-face {
+	font-family: "Montserrat";
+	src: url("Montserrat.ttf");
+	font-weight: normal;
+}
+
+/* == Приховання барабана в == */
+/* == <input type="number"> == */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+/* == Анімація для звуження коробки == */
+@keyframes push {
+	from { width: 675px; height: 675px; background: #0D0D0D; color: #F2F2F2; border-color: #0D0D0D; }
+	10% { border-color: #F2F2F2; }
+	49% { background: #0D0D0D; color: #F2F2F2; }
+	50% { background: #F2F2F2; color: #0D0D0D; }
+	to { width: 450px; height: 450px; background: #F2F2F2; color: #0D0D0D; border-color: #F2F2F2; }
+}
+
+/* == Анімація приближння == */
+@keyframes zoom { from { transform: scale(0.9); } to { transform: scale(1); } }
+/* == Анімація зникнення == */
+@keyframes fadeOff { from { opacity: 1; } to { opacity: 0; } }
+/* == Анімація появи == */
+@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+
+/* == Для всіх елементів == */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	color: #F2F2F2;
+	font-family: Montserrat;
+}
+
+/* == Для тіла == */
+body {
+	background: #0D0D0D;
+}
+
+/* == Для параметрів == */
+.params {
+	display: flex;
+	align-items: center;
+}
+
+/* == Для тої полоски поцентру == */
+.gap { background: #F2F2F2; }
+
+/* == Забираєм стилі для input == */
+/* == Що стоять за замовчуванням == */
+input {
+	border: none;
+	outline: none;
+	background: transparent;
+	-moz-appearance: textfield;
+}
+
+/* == Для кнопок "Щераз" == */
+/* == та "Згенерувати" == */
+.start {
+	font-size: 32px;
+	cursor: pointer;
+
+	transition: 0.2s ease;
+	transform: translateY(0);
+}
+
+/* == Для лівого input == */
+.from { text-align: right; }
+/* == При наведені кнопка піднімається на 2px == */
+.start:hover { transform: translateY(-2px); }
+/* == При натискані кнопка опускається назад == */
+.start:active { transform: translateY(0); }
+
+/* == Коробка з результатом == */
+.square {
+	width: 675px;
+	height: 675px;
+	position: relative;
+	font-size: 225px;
+
+	display: grid;
+	place-items: center;
+	border: 10px solid #0D0D0D;
+}
