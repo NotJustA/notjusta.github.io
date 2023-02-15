@@ -1,0 +1,57 @@
+<html>
+  <head>
+    <style>
+        body {
+            height: 1000px;
+        }
+    
+
+html::-webkit-scrollbar {
+    display: none;
+  }
+  
+
+html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+      .scroll-bar {
+        width: 15px;
+        height: 100%;
+        background-color: #ccc;
+        border-radius: 5px;
+        position: relative;
+        margin-top: 10px;
+      }
+
+      .scroll-slider {
+        width: 15px;
+        height: 100px;
+        background-color: #333;
+        border-radius: 5px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="scroll-bar">
+      <div class="scroll-slider"></div>
+    </div>
+
+    <script>
+      const scrollBar = document.querySelector('.scroll-bar');
+      const scrollSlider = document.querySelector('.scroll-slider');
+
+      scrollBar.addEventListener('click', (event) => {
+        let y = event.pageY - scrollBar.offsetTop;
+        let percent = y / scrollBar.clientHeight;
+        scrollSlider.style.top = percent * 100 + '%';
+      });
+    </script>
+  </body>
+</html>
