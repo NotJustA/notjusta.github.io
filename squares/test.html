@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
+
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    .scrollbar-container {
+  position: relative;
+  height: 200px; /* Set the height of the container */
+  overflow: hidden; /* Hide the default scrollbar */
+}
+
+.scrollbar-track {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 8px; /* Set the width of the track */
+  background-color: #f2f2f2;
+  border-radius: 4px;
+}
+
+.scrollbar-thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 8px; /* Set the width of the thumb */
+  background-color: #999;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.scrollable-content {
+  height: 100%; /* Set the height of the content */
+  overflow-y: scroll; /* Enable scrolling */
+}
+
+
+img {
+  width: 100%;
+}
+  </style>
+</head>
+<body>
+
+  <div class="scrollbar-container">
+    <div class="scrollbar-track">
+      <div class="scrollbar-thumb"></div>
+    </div>
+    <div class="scrollable-content">
+      <img src="images/img1.jpg" alt="">
+      <img src="images/img2.jpg" alt="">
+      <img src="images/img3.jpg" alt="">
+      <img src="images/img4.jpg" alt="">
+    </div>
+  </div>
+
+  
+<script>
+  var track = document.querySelector('.scrollbar-track');
+var thumb = document.querySelector('.scrollbar-thumb');
+var content = document.querySelector('.scrollable-content');
+
+function updateThumb() {
+  var trackHeight = track.offsetHeight;
+  var thumbHeight = content.offsetHeight / content.scrollHeight * trackHeight;
+  thumb.style.height = thumbHeight + 'px';
+}
+
+function handleScroll() {
+  var scrollTop = content.scrollTop;
+  var trackHeight = track.offsetHeight;
+  var thumbHeight = thumb.offsetHeight;
+  var maxScrollTop = content.scrollHeight - content.offsetHeight;
+  var thumbTop = scrollTop / maxScrollTop * (trackHeight - thumbHeight);
+  thumb.style.top = thumbTop + 'px';
+}
+
+content.addEventListener('scroll', handleScroll);
+window.addEventListener('resize', updateThumb);
+updateThumb(); // Call these functions once initially to set the scrollbar correctly
+handleScroll();
+
+</script>
+
+</body>
+</html>
