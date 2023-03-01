@@ -50,6 +50,11 @@ button, input[type="submit"] {
     cursor: pointer;
 }
 
+button[active] {
+    background: var(--secondary);
+    color: var(--light);
+}
+
 section {
     transition: 0.3s ease;
 }
