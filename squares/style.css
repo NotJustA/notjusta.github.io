@@ -153,6 +153,7 @@
 
 .about {
     padding: 0 30px;
+    opacity: 0;
 }
 
 .about .experience {
@@ -185,6 +186,7 @@
 
 .works {
     padding: 100px 30px;
+    opacity: 0;
 }
 
 .works .list {
