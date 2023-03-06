@@ -99,14 +99,14 @@ section {
 
 /* ========= */
 
-@keyframes loading {
-    from { width: 0%; }
-    to { width: 100%; }
+@keyframes loaded {
+    from { height: 100vh; }
+    to { height: 0; }
 }
 
-@keyframes fadeOut {
-    from { opacity: 1; }
-    to { opacity: 0; }
+@keyframes unloading {
+    from { height: 0; }
+    to { height: 100vh; }
 }
 
 /* ========= */
