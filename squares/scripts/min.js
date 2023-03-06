@@ -6,7 +6,7 @@ const setCSSVar = o => {
 }
 
 /* Viewscreen height */
-let wHeigh = $(".menu").height();
+let wHeigh = screen.height;
 
 /* Page timeline */
 const timeline = new TimelineMax();
@@ -80,15 +80,37 @@ fillNav();
 
 $(window).on("load", () => {
     console.log("Document is ready");
+    $(".preloader").css("animation", "0.7s cubic-bezier(.61,.11,0,1) 1s loaded both")
+    // timeline.fromTo($(".preloader"), 1, {y: 0}, {y: -wHeigh, ease: Power2.ease});
+    // setTimeout(() => $($(".preloader").css("display", "none")), 400);
 
-    timeline.fromTo($(".preloader"), 0.3, {opacity: 1}, {opacity: 0, ease: Power2.ease});
-    setTimeout(() => $($(".preloader").css("display", "none")), 400);
+    timeline.fromTo($(".hero .title"), 0.3, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeInOutside}, "+=1.4")
+    .fromTo($(".hero .subtext"), 0.3, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeInOutside}, "-=0.2")
+    .fromTo($("nav"), 0.2, {opacity: 0, y: -10}, {opacity: 1, y: 0, ease: Power2.easeInOut}, "+=0.3")
+
+    apearSection(1);
 });
 
 window.onscroll = () => {
     fillNav();
+    apearSection(0);
     // $(".about").css("margin-top", -240*(window.scrollY / wHeigh) + "px");
     // $(".design").css("margin-top", -240*((window.scrollY - $(".about").height()) / wHeigh) + "px");
+}
+
+apearSection = d => {
+
+    if (($(".hero").height() / 2) <= window.scrollY && $(".about").css("transform") === 'none')
+    timeline.fromTo($(".about"), 0.5, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeInOutside}, (d ? "-=0.9" : "+=0"));
+
+    if (($(".about").position().top + $(".about").height() / 2) <= window.scrollY && $(".design").css("transform") === 'none')
+    timeline.fromTo($(".design"), 0.5, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeInOutside}, (d ? "-=0.9" : "+=0"));
+
+    if (($(".design").position().top + $(".design").height() / 2) <= window.scrollY && $(".webdev").css("transform") === 'none')
+    timeline.fromTo($(".webdev"), 0.5, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeInOutside}, (d ? "+=2.4" : "+=0"));
+
+    if (($(".webdev").position().top + $(".webdev").height() / 2) <= window.scrollY && $(".ecommerce").css("transform") === 'none')
+    timeline.fromTo($(".ecommerce"), 0.5, {opacity: 0, y: 20}, {opacity: 1, y: 0, ease: Power2.easeInOutside}, (d ? "+=0.5" : "+=0"));
 }
 
 /* ========= */
