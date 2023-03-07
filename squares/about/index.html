@@ -14,6 +14,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+     <!-- Preloader -->
+     <section class="preloader">
+    </section>
+
     <!-- Navigation -->
     <nav class="font-nn">
         <div class="hamburger">
@@ -28,29 +32,43 @@
 
     <div class="content font-nn">        
         <div class="topic">How we started<br>&& Our team</div>
-        <div class="bodytext">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam eget. Amet tellus cras adipiscing enim eu turpis egestas pretium. Sagittis purus sit amet volutpat consequat.</div> 
+        <div class="bodytext">We started as a small team of passionate web designers and developers with a shared vision: to help businesses establish a strong online presence. We saw a need for high-quality web design, seamless website development, and effective eCommerce solutions. So we rolled up our sleeves and got to work. With each project, we learned, grew, and refined our skills.</div> 
     </div>
 
     <div class="slider">
         <div class="person">
             <div class="picture primary-b"></div>
             <p class="name primary-c font-ms">
-                Name & Surname
-                <span class="role font-nn">Role in team</span>
+                Sarah Johnson
+                <span class="role font-nn">Lead Web Designer</span>
             </p>
         </div>
         <div class="person">
             <div class="picture primary-b"></div>
             <p class="name primary-c font-ms">
-                Name & Surname
-                <span class="role font-nn">Role in team</span>
+                Michael Smith
+                <span class="role font-nn">Senior Website Developer</span>
             </p>
         </div>
         <div class="person">
             <div class="picture primary-b"></div>
             <p class="name primary-c font-ms">
-                Name & Surname
-                <span class="role font-nn">Role in team</span>
+                Emily Davis
+                <span class="role font-nn">eCommerce Specialist</span>
+            </p>
+        </div>
+        <div class="person">
+            <div class="picture primary-b"></div>
+            <p class="name primary-c font-ms">
+                David Rodriguez
+                <span class="role font-nn">Project Manager</span>
+            </p>
+        </div>
+        <div class="person">
+            <div class="picture primary-b"></div>
+            <p class="name primary-c font-ms">
+                Samantha Brown
+                <span class="role font-nn">Marketing and Comms Manager</span>
             </p>
         </div>
     </div>
@@ -60,43 +78,43 @@
         <div class="plist">
             <div class="principle">
                 <div class="heading font-ms primary-c" onclick="showDesc(0)">
-                    Principle 1
+                    Quality
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <rect y="24" width="24" height="24" rx="12" transform="rotate(-90 0 24)" style="fill: var(--button)"/>
                         <path d="M8 12L16 12M12 8L12 16" style="stroke: var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>                 
                 </div>
-                <div class="description font-nn primary-c" style="display: none">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam eget. Amet tellus cras adipiscing enim eu turpis egestas pretium. Sagittis purus sit amet volutpat consequat.</div>
+                <div class="description font-nn primary-c" style="display: none">We strive to deliver high-quality work that meets the needs and exceeds the expectations of our clients. We pay close attention to detail and ensure that every project we undertake is of the highest standard.</div>
             </div>
             <div class="principle">
                 <div class="heading font-ms primary-c" onclick="showDesc(1)">
-                    Principle 2
+                    Collaboration
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <rect y="24" width="24" height="24" rx="12" transform="rotate(-90 0 24)" style="fill: var(--button)"/>
                         <path d="M8 12L16 12M12 8L12 16" style="stroke: var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="description font-nn primary-c" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam eget. Amet tellus cras adipiscing enim eu turpis egestas pretium. Sagittis purus sit amet volutpat consequat.</div>
+                <div class="description font-nn primary-c" style="display: none;">We believe that teamwork is essential for success. We work closely with our clients, taking the time to understand their needs and preferences, and we collaborate with each other to bring our collective expertise and creativity to each project.</div>
             </div>
             <div class="principle">
                 <div class="heading font-ms primary-c" onclick="showDesc(2)">
-                    Principle 3
+                    Innovation
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <rect y="24" width="24" height="24" rx="12" transform="rotate(-90 0 24)" style="fill: var(--button)"/>
                         <path d="M8 12L16 12M12 8L12 16" style="stroke: var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="description font-nn primary-c" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam eget. Amet tellus cras adipiscing enim eu turpis egestas pretium. Sagittis purus sit amet volutpat consequat.</div>
+                <div class="description font-nn primary-c" style="display: none;">We are committed to staying on the cutting edge of web design, website development, and eCommerce. We constantly explore new technologies and techniques, seeking out innovative solutions that can help our clients achieve their goals.</div>
             </div>
             <div class="principle">
                 <div class="heading font-ms primary-c" onclick="showDesc(3)">
-                    Principle 4
+                    Customer satisfaction
                     <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                         <rect y="24" width="24" height="24" rx="12" transform="rotate(-90 0 24)" style="fill: var(--button)"/>
                         <path d="M8 12L16 12M12 8L12 16" style="stroke: var(--primary)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                 </div>
-                <div class="description font-nn primary-c" style="display: none;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nec ullamcorper sit amet risus nullam eget. Amet tellus cras adipiscing enim eu turpis egestas pretium. Sagittis purus sit amet volutpat consequat.</div>
+                <div class="description font-nn primary-c" style="display: none;">Our ultimate goal is to ensure the satisfaction of our clients. We strive to deliver exceptional customer service, responding promptly to inquiries and concerns, and always seeking to exceed expectations. We view each project as an opportunity to build a lasting relationship with our clients, based on mutual respect and trust.</div>
             </div>
         </div>
     </div>
@@ -112,7 +130,7 @@
                 <div class="tab5">5<div class="bar"></div></div>
             </div>
 
-            <div class="award">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incidi</div>
+            <div class="award"><div class="name">Top E-Commerce Website Developer</div>This award would recognize the studio's expertise in developing high-quality, user-friendly e-commerce websites that help businesses succeed in the online marketplace.</div>
         </div>
     </div>
 
