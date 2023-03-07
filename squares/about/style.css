@@ -5,6 +5,12 @@ body {
 
 /* ========= */
 
+.title {
+    margin-bottom: 20px;
+}
+
+/* ========= */
+
 .slider {
     margin: 30px 0 60px -30px;
     padding: 0 30px;
@@ -30,7 +36,7 @@ body {
 }
 
 .slider .name {
-    font-weight: 500;
+    font-weight: 600;
     font-size: 20px;
     line-height: 24px;
 }
@@ -38,7 +44,7 @@ body {
 .slider .role {
     display: block;
     font-weight: 400;
-    font-size: 20px;
+    font-size: 16px;
     line-height: 27px;
 }
 
@@ -108,10 +114,16 @@ body {
 }
 
 .award {
+    font-weight: 500;
+    font-size: 20px;
+    text-align: center;
+}
+
+.award .name {
     font-weight: 700;
     font-size: 28px;
     line-height: 34px;
-    text-align: center;
+    margin-bottom: 20px;
 }
 
 /* ========= */
