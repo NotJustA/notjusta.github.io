@@ -48,6 +48,12 @@ body {
     line-height: 27px;
 }
 
+.andrew { background-image: url(/images/Andrew.png)}
+.michael { background-image: url(/images/Michael.png)}
+.emily { background-image: url(/images/Emily.png)}
+.david { background-image: url(/images/David.png)}
+.samantha { background-image: url(/images/Samantha.png)}
+
 /* ========= */
 
 .plist, .principle {
