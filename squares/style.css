@@ -192,8 +192,8 @@
     transition: background-color 0.3s ease;
 }
 
-.design .img1 { background-image: url(http://squares.io/images/FrolarDesign.png); }
-.design .img2 { background-image: url(http://squares.io/images/DavisFitCo.png); }
+.design .img1 { background-image: url(https://notjusta.github.io/squares/images/FrolarDesign.png); }
+.design .img2 { background-image: url(https://notjusta.github.io/squares/images/DavisFitCo.png); }
 .webdev .img1 { background-image: url(https://images.unsplash.com/photo-1561584697-c6a5a41f8359?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); }
 .webdev .img2 { background-image: url(https://images.unsplash.com/photo-1549619856-ac562a3ed1a3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); }
 .ecommerce .img1 { background-image: url(https://images.unsplash.com/photo-1567443756539-26a8fdd248cf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80); }
