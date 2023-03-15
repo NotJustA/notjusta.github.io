@@ -17,47 +17,19 @@ const timeline = new TimelineMax();
 
 $(".about").css({"padding-top": $("nav").height() + "px"});
 $(".deisgn").css({"padding-top": $("nav").height() + "px"});
-$(".menu .themes span").css("left", localStorage["theme"] === "light" ? "1px" : "13px");
 
-if (!localStorage["theme"]) localStorage["theme"] = "light";
 const resize = () => setCSSVar({"artwork": ($(document).width() - 60) / 580});
 resize();
 window.onresize = () => setTimeout(resize(), 100);
 
 /* ========= */
 
-/* Theme */
-
-const setTheme = () => {
-    let theme = localStorage["theme"];
-    setCSSVar({
-        "bg": (theme === "light" ? "#D2D2D2" : "#181818"),
-        "primary": (theme === "light" ? "#0D0D0D" : "#F2F2F2"),
-        "secondary": (theme === "light" ? "#2D2D2D" : "#A2A2A2"),
-        "light": (theme === "light" ? "#E7E7E7" : "#1C1C1C"),
-        "button": (theme === "light" ? "#C3C3C3" : "#323232")
-    })
-}
-
-const changeTheme = () => {
-    localStorage["theme"] = localStorage["theme"] === "light" ? "dark" : "light";
-    setTheme();
-}
-
-setTheme();
-
 /* Menu */
 
 const menu = () => {
-    if ($(".menu").attr("style")) $(".menu").removeAttr("style");
-    else $(".menu").css("display", "none");
+    if (!$(".menu").attr("style")) $(".menu").css("animation", "0.7s cubic-bezier(.61,.11,0,1) 0s menu_open both")
+    else $(".menu").css("animation", "0.7s cubic-bezier(.61,.11,0,1) 0s menu_close both")
 }
-
-$(".menu .themes").click(() => {
-    let theme = localStorage["theme"];
-    $(".menu .themes span").css("left", theme === "light" ? "13px" : "1px");
-    changeTheme();
-})
 
 /* Back to top */
 
