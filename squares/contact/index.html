@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Reviews</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://notjusta.github.io/squares/min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Preloader -->
+    <section class="preloader">
+    </section>
+
+    <!-- Menu -->
+    <section class="menu font-nn">
+
+        <!-- Links -->
+        <div class="links primary-c font-ms">
+            <div class="link more_about">About us</div>
+            <div class="link more_works">Our works</div>
+            <div class="link reviews">Testimonials</div>
+            <div onclick="menu()">Contact</div>
+        </div>
+
+        <!-- Menu exit button -->
+        <button onclick="menu()">Go back</button>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="font-nn">
+        <div class="link home logo">Squares</div>
+
+        <!-- Links (only on desktop) -->
+        <div class="links primary-c font-ms">
+            <div class="link more_about">About us</div>
+            <div class="link more_works">Our works</div>
+            <div class="link more_reviews">Testimonials</div>
+            <div>Contact</div>
+        </div>
+        
+        <!-- Hamburger (only on mobile) -->
+        <div class="hamburger" onclick="menu()">
+            <div class="shape"></div>
+        </div>
+    </nav>
+    
+    <!-- Title -->
+    <div class="title">Get in touch</div>
+
+    <!-- Samantha's contact -->
+    <div class="cnumber font-ms">
+        Samantha<br>
+        +123 456 78 90<br>
+        San Francisco
+    </div>
+
+    <!-- Form -->
+    <form class="font-nn">
+        <div class="inputs">
+            <input type="text" name="name" placeholder="Your name">
+            <input type="text" name="company" placeholder="Company name">
+            <input type="email" name="email" placeholder="Your email">
+            <textarea rows="5" name="comment" placeholder="Comment"></textarea>
+        </div>
+        
+        <div class="submit">
+            <div class="agreevement font-ms">By clicking Submit button you<br>agree to your <u>Privacy Policy</u> terms.</div>
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+
+    <!-- Footer -->
+    <div class="footer font-nn">
+        
+        <div class="grid">
+            <div>
+                <div class="top">
+                    <div class="logo">Squares</div>
+                    <div class="copyright">© 2004 - 2023</div>    
+                </div>
+                <div class="subtext">Transforming your digital presence with Squares - expert web design, eCommerce solutions, and creative branding.</div>
+                <div class="copyright">© 2004 - 2023</div>
+            </div>
+
+            <div class="links">
+                <div class="title">Social media</div>
+                <div class="link instagram.com">Instagram</div>
+                <div class="link facebook.com">Facebook</div>
+                <div class="link twitter.com">Twitter</div>
+                <div class="link youtube.com">YouTube</div>
+            </div>
+            <div class="links">
+                <div class="title">Usefull links</div>
+                <div class="link more_about">About us</div>
+                <div class="link more_works">Out works</div>
+                <div class="link more_reviews">Testimonials</div>
+                <div onclick="backtotop()">Contact</div>
+            </div>
+            <div class="links">
+                <div class="title">Products</div>
+                <div class="link more_webdev">Web dev</div>
+                <div class="link more_design">Design</div>
+                <div class="link more_ecommerce">eCommerce</div>
+            </div>
+        </div>
+
+        <div class="btt" onclick="backtotop()" pointer>
+            Back to top
+            <img src="https://notjusta.github.io/squares/shapes/back_to_top.svg">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://notjusta.github.io/squares/scripts/jquery.js"></script>
+    <script src="https://notjusta.github.io/squares/scripts/tween.js"></script>
+    <script src="https://notjusta.github.io/squares/scripts/timeline.js"></script>
+    <script src="https://notjusta.github.io/squares/scripts/min.js"></script>
+
+</body>
+</html>

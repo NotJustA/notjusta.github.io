@@ -1,0 +1,329 @@
+.about, .works {
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+/* ========= */
+
+.main-page {
+    width: 100vw;
+    min-height: 100vh;
+    height: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* ========= */
+
+.hero {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+
+    padding: 0 30px;
+}
+
+.hero .boxes {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.hero .subtext {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--secondary);
+    transition: color 0.3s ease;
+    padding-right: 10px;
+    max-width: 660px;
+}
+
+@media (min-width: 450px) {
+    .hero { padding: 0 50px; }
+}
+
+@media (min-width: 1440px) {
+    .hero { padding: 0 110px; }
+}
+
+/* ========= */
+
+.about {
+    width: 100%;
+    padding: 0 30px;
+}
+
+.about .bodytext {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about .experience {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    font-family: "Montserrat";
+}
+
+.about span:first-child {
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 78px;
+    letter-spacing: 0.06em;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.about span:last-child {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: right;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+@media (min-width: 711px) {
+    .about { padding: 100px 50px; }
+    .about .bodytext { gap: 30px; }
+    .about .experience { width: 100%; }
+
+    .about span:first-child {
+        font-weight: 700;
+        font-size: 96px;
+        line-height: 117px;
+        letter-spacing: 0.06em;
+    }
+}
+
+@media (min-width: 1440px) {
+    .about { padding: 0 110px; }
+}
+
+/* ========= */
+
+.works {
+    padding: 100px 30px;
+    width: 100%;
+}
+
+.works .list {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.works .artwork {
+    width: calc(580px * var(--artwork));
+    height: calc(300px * var(--artwork));
+    background-size: cover;
+    background-position: center;
+    transition: background-color 0.3s ease;
+}
+
+.design .img1 { background-image: url(https://notjusta.github.io/squares/images/FDS.png); }
+.design .img2 { background-image: url(https://notjusta.github.io/squares/images/DFC.png); }
+.webdev .img1 { background-image: url(https://notjusta.github.io/squares/images/TTA.png); }
+.webdev .img2 { background-image: url(https://notjusta.github.io/squares/images/LMS.png); }
+.ecommerce .img1 { background-image: url(https://notjusta.github.io/squares/images/SCD.png); }
+.ecommerce .img2 { background-image: url(https://notjusta.github.io/squares/images/BTS.png); }
+
+.works .text {
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--primary);
+    transition: color 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0px;
+    gap: 10px;
+}
+
+@media (min-width: 711px) {
+    .works {
+        padding: 100px 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .works > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .works .link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .works .artwork {
+        width: 580px;
+        height: 300px;
+    }
+
+    .works .list {
+        margin-top: 0;
+        gap: 0;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+
+/* ========= */
+
+.reviews {
+    padding: 100px 30px;
+    min-height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+}
+
+.vlist { margin-top: 50px; }
+
+.review, .text-n-author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 15px;
+    position: relative;
+}
+
+.text-n-author .icon {
+    display: none;
+}
+
+.review .text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    color: var(--primary);
+    transition: color 0.3s ease;
+}
+
+.review .author {
+    font-family: "Montserrat";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--secondary);
+}
+
+.review .author span {
+    display: none;
+}
+
+.review .controls {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.review .controls > div {
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+    background-color: var(--button);
+
+    display: grid;
+    place-items: center;
+}
+
+.review .icon {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 38px;
+    color: var(--primary);
+}
+
+.review .prev { content: url(shapes/arrow_left.svg); }
+.review .next { content: url(shapes/arrow_right.svg); }
+
+@media (min-width: 711px) {
+    .reviews {
+        width: 100%;
+        padding: 100px 50px;
+        display: flex;
+        align-items: center;
+    }
+
+    .reviews > div {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 60px;
+    }
+
+    .reviews .link {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+
+    .review {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        position: relative;
+        flex-flow: row-reverse;
+    }
+
+    .review .text {
+        width: 589px;
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .controls {
+        height: 100%;
+        position: relative!important;
+    }
+
+    .controls .icon {
+        display: none!important;
+    }
+
+    .text-n-author .icon {
+        display: block;
+    }
+
+    .review .icon {
+        font-weight: 700;
+        font-size: 64px;
+        line-height: 20px;
+    }
+
+    .review .author span {
+        display: unset;
+    }
+
+    .review .prev { content: url(shapes/arrow_left_lg.svg); }
+    .review .next { content: url(shapes/arrow_right_lg.svg); }
+}
+
+/* ========= */
