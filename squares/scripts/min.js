@@ -259,5 +259,5 @@ $(".link").click(e => {
             break;
     }
 
-    setTimeout(() => window.open("http://squares.io/" + path, "_self"), 710);
+    setTimeout(() => window.open("https://notjusta.github.io/squares/" + path, "_self"), 710);
 })
