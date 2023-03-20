@@ -482,7 +482,6 @@ nav .links { display: none; }
 
 .footer {
     width: 100vw;
-    margin: -30px;
     position: relative;
 
     padding: 20px 30px;
@@ -577,8 +576,6 @@ a {
 }
 
 @media (min-width: 711px) {
-
-    .footer { margin-left: -50px; }
         
     .footer {
         padding: 50px 60px;
