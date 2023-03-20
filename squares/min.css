@@ -638,5 +638,12 @@ a {
 }
 
 @media (min-width: 1440px) {
-    .footer { margin-left: -110px; }
+    .footer .btt {
+        transform: rotate(-90deg) translate(40%, 90%);
+        right: calc((100vw - 1440px)/2)!important;
+    }
+
+    .footer {
+        padding: 50px calc((100vw - 1440px)/2)!important;
+    }
 }
