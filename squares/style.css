@@ -186,6 +186,10 @@
     }
 }
 
+@media (min-width: 1440px) {
+    .reviews { padding: 100px 110px!important; }
+}
+
 /* ========= */
 
 .reviews {
@@ -326,4 +330,6 @@
     .review .next { content: url(shapes/arrow_right_lg.svg); }
 }
 
-/* ========= */
+@media (min-width: 1440px) {
+    .reviews { padding: 100px 110px!important; }
+}
