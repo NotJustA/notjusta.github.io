@@ -60,6 +60,13 @@ button[active] {
     }
 }
 
+@media (min-width: 1440px) {
+    button, input[type="submit"] {
+        padding: 8px 20px;
+        font-size: 20px;
+    }
+}
+
 /* ========= */
 
 @font-face {
@@ -153,6 +160,10 @@ button[active] {
     .arrow { width: 21px; height: 21px; }
 }
 
+@media (min-width: 1440px) {
+    .arrow { width: 24px; height: 24px; }
+}
+
 /* ========= */
 
 .cursor {
@@ -174,6 +185,10 @@ button[active] {
         opacity 0.1s ease,
         transform 0.1s ease,
         border 0.1s ease;
+}
+
+@media (min-width: 1440px) {
+    .arrow { width: 18px; height: 18px; }
 }
 
 /* ========= */
@@ -244,7 +259,7 @@ button[active] {
     color: var(--primary);
 }
 
-@media (min-width: 450px) {
+@media (min-width: 711px) {
     .menu {
         padding: 30px 50px;
         gap: 30px;
@@ -270,6 +285,13 @@ button[active] {
 
     .menu .settings > div {
         width: 250px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .menu {
+        padding: 30px 110px;
+        gap: 30px;
     }
 }
 
@@ -299,12 +321,6 @@ button[active] {
     color: var(--primary);
     transition: color 0.3s ease;
 }
-/* 
-.links > div {
-    cursor: pointer;
-}
-
-.link { cursor: pointer; } */
 
 @media (min-width: 711px) {
     .content  {
@@ -403,11 +419,9 @@ nav .links { display: none; }
 .hamburger .shape::before { top: -4px; }
 .hamburger .shape::after { top: 4px; }
 
-@media (min-width: 450px) {
-    nav { padding: 10px 50px; }
-}
-
 @media (min-width: 700px) {
+    nav { padding: 10px 50px; }
+
     .hamburger { display: none; }
     
     nav .links {
@@ -456,7 +470,7 @@ nav .links { display: none; }
     .title { font-size: 80px; }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 1440px) {
     .title { font-size: 96px; }
 }
 
@@ -558,11 +572,9 @@ a {
     text-decoration: none;
 }
 
-@media (min-width: 450px) {
-    footer { margin-left: -50px; }
-}
-
 @media (min-width: 711px) {
+
+    .footer { margin-left: -50px; }
         
     .footer {
         padding: 50px 60px;
@@ -624,6 +636,6 @@ a {
     }
 }
 
-@media (min-width: 1200px) {
-    footer { margin-left: -110px; }
+@media (min-width: 1440px) {
+    .footer { margin-left: -110px; }
 }
