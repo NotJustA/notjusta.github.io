@@ -188,7 +188,11 @@ button[active] {
 }
 
 @media (min-width: 1440px) {
-    .arrow { width: 18px; height: 18px; }
+    .cursor {
+        width: 18px;
+        height: 18px;
+        border-radius: 9px;
+    }
 }
 
 /* ========= */
@@ -290,7 +294,7 @@ button[active] {
 
 @media (min-width: 1440px) {
     .menu {
-        padding: 30px 110px;
+        padding: 30px calc((100vw - 1440px)/2)!important;;
         gap: 30px;
     }
 }
@@ -435,7 +439,7 @@ nav .links { display: none; }
 }
 
 @media (min-width: 1440px) {
-    nav { padding: 10px 110px; }
+    nav { padding: 10px calc((100vw - 1440px)/2)!important; }
 }
 
 /* ========= */
