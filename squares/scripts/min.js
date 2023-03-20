@@ -135,14 +135,14 @@ const menu = () => {
 const showPrinDesc = n => {
     let thesame = $(".principle")[n].getAttribute("expanded") !== null
 
-    $("[expanded] img").attr("src", "/shapes/expand.svg");
+    $("[expanded] img").attr("src", "https://notjusta.github.io/squares//shapes/expand.svg");
     $("[expanded] .description").css("display", "none");
     $("[expanded]").removeAttr("expanded");
 
     if(thesame) return;
 
     $(".principle")[n].setAttribute("expanded", "");
-    $("[expanded] img").attr("src", "/shapes/collapse.svg");
+    $("[expanded] img").attr("src", "https://notjusta.github.io/squares//shapes/collapse.svg");
     $("[expanded] .description").css("display", "");
 }
 
