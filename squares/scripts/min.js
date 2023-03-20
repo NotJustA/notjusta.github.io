@@ -38,6 +38,10 @@ if (!localStorage["cat"]) localStorage["cat"] = "all";
 /* == Cursor == */
 /* == ====== == */
 
+// If opened on iPhone, hide cursor
+if (window.navigator.userAgent.indexOf('like Mac OS X') != -1)
+$(".cursor").css("display", "none");
+
 // Cursor movement
 const cursorPos = e => {
     if (e.sourceCapabilities) {
