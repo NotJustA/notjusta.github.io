@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title -->
+    <title>Reviews</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://notjusta.github.io/squares/min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <!-- Cursor -->
+    <div class="cursor"></div>
+    
+    <!-- Preloader -->
+    <section class="preloader">
+    </section>
+
+    <!-- Menu -->
+    <section class="menu font-nn">
+
+        <!-- Links -->
+        <div class="links primary-c font-ms">
+            <div class="link more_about">About us</div>
+            <div class="link more_works">Our works</div>
+            <div onclick="menu()">Testimonials</div>
+            <div class="link more_contact">Contact</div>
+        </div>
+        
+        <!-- Menu exit button -->
+        <button onclick="menu()">Go back</button>
+    </section>
+
+    <!-- Navigation -->
+    <nav class="font-nn">
+        <div class="link home logo">Squares</div>
+
+        <!-- Links (only on desktop) -->
+        <div class="links primary-c font-ms">
+            <div class="link more_about">About us</div>
+            <div class="link more_works">Our works</div>
+            <div>Testimonials</div>
+            <div class="link more_contact">Contact</div>
+        </div>
+        
+        <!-- Hamburger (only on mobile) -->
+        <div class="hamburger" onclick="menu()">
+            <div class="shape"></div>
+        </div>
+    </nav>
+    
+    <div class="title">Reviews</div>
+
+    <div class="wlist">
+        <div class="item">
+            <div class="artwork img1"></div>
+            <div class="review font-nn">
+                <div class="top primary-c">”</div>
+                <div class="text">I recently had the pleasure of working with Squares on a website redesign project for my business. Their team of designers was professional, responsive, and creative. They really took the time to understand our brand and business goals, and delivered a stunning design that exceeded our expectations. I would highly recommend Squares for anyone looking for top-notch design services.</div>
+                <div class="author">Sarah Johnson</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="artwork img2"></div>
+            <div class="review font-nn">
+                <div class="top primary-c">”</div>
+                <div class="text">Squares did an excellent job designing our company's new website. They were able to capture our brand's essence and create a design that was both visually appealing and user-friendly. The team was easy to work with and provided regular updates throughout the process. We couldn't be happier with the end result!</div>
+                <div class="author">Emily Davis</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="artwork img3"></div>
+            <div class="review font-nn">
+                <div class="top primary-c">”</div>
+                <div class="text">We hired Squares to develop a custom web application for our business, and they did not disappoint. Their team of developers was incredibly knowledgeable and skilled, and they were able to deliver a high-quality product within our timeline and budget constraints. We would definitely work with Squares again in the future.</div>
+                <div class="author">Mark Thompson</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="artwork img4"></div>
+            <div class="review font-nn">
+                <div class="top primary-c">”</div>
+                <div class="text">Squares did an excellent job building our new website. Their team of developers was able to take our ideas and turn them into a fully functional, responsive website that looks great on all devices. They were also great communicators throughout the process and provided us with regular updates. We highly recommend Squares for any web development needs.</div>
+                <div class="author">Rachel Lee</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="artwork img5"></div>
+            <div class="review font-nn">
+                <div class="top primary-c">”</div>
+                <div class="text">Squares helped us launch our new eCommerce store, and we couldn't be happier with the results. Their team was able to set up our store quickly and efficiently, and provided us with all the tools we needed to manage our inventory and process orders. Their expertise in eCommerce really helped us streamline our business and increase sales. Thank you, Squares!</div>
+                <div class="author">John Smith</div>
+            </div>
+        </div>
+        <div class="item">
+            <div class="artwork img6"></div>
+            <div class="review font-nn">
+                <div class="top primary-c">”</div>
+                <div class="text">Squares has been an amazing partner in helping us grow our online business. Their team of eCommerce experts has been instrumental in driving traffic and sales to our store, and they are always available to answer any questions or provide guidance. We highly recommend Squares to anyone looking to take their eCommerce business to the next level.</div>
+                <div class="author">Michael Brown</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <div class="footer font-nn">
+        
+        <div class="grid">
+            <div>
+                <div class="top">
+                    <div class="logo">Squares</div>
+                    <div class="copyright">© 2004 - 2023</div>    
+                </div>
+                <div class="subtext">Transforming your digital presence with Squares - expert web design, eCommerce solutions, and creative branding.</div>
+                <div class="copyright">© 2004 - 2023</div>
+            </div>
+
+            <div class="links">
+                <div class="title">Social media</div>
+                <div class="link instagram.com">Instagram</div>
+                <div class="link facebook.com">Facebook</div>
+                <div class="link twitter.com">Twitter</div>
+                <div class="link youtube.com">YouTube</div>
+            </div>
+            <div class="links">
+                <div class="title">Usefull links</div>
+                <div class="link more_about">About us</div>
+                <div class="link more_works">Out works</div>
+                <div onclick="backtotop()">Testimonials</div>
+                <div class="link more_contact">Contact</div>
+            </div>
+            <div class="links">
+                <div class="title">Products</div>
+                <div class="link more_webdev">Web dev</div>
+                <div class="link more_design">Design</div>
+                <div class="link more_ecommerce">eCommerce</div>
+            </div>
+        </div>
+
+        <div class="btt" onclick="backtotop()" pointer>
+            Back to top
+            <img src="https://notjusta.github.io/squares/shapes/back_to_top.svg">
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://notjusta.github.io/squares/scripts/jquery.js"></script>
+    <script src="https://notjusta.github.io/squares/scripts/tween.js"></script>
+    <script src="https://notjusta.github.io/squares/scripts/timeline.js"></script>
+    <script src="https://notjusta.github.io/squares/scripts/min.js"></script>
+
+</body>
+</html>
